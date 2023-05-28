@@ -50,31 +50,28 @@
         
         
         <!-- End Navbar -->
-
-
-        <!-- Responsive Side Bar -->
-
-            <div class="sideNav" id="sidenav">
-                <a  onclick="closeNavOpen()" class="closBtn">&#10006;</a>
-                <ul class="nav-items">
-                    
-                    <li><a href="blog.html">Home</a></li>
-                    <li><a href="about.html">Our Products</a></li>
-                    <li><a href="posts.html">Resources</a></li>
-                    <li><a href="servises.html">Contacts</a></li>
-                </ul>
-                <div class="nav-Btn">
-                    <button class="signup-Btn">Sign Up</button>
-                    <button class="login-Btn">Log In</button>
-                </div>
+<!-- Responsive Side Bar -->
+<div class="sideNav" id="sidenav">
+    <a onclick="closeNavOpen()" class="closBtn">&#10006;</a>
+    <ul class="nav-items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Products</a></li>
+        <li class="dropdown-mobile">
+            <a class="dropdown-btn" onclick="toggleDropdown()">Resources <span class="arrow">&#9662;</span></a>
+            <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
-
-
-
-        <!-- End -->
-
-
-
+        </li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+    <div class="nav-Btn">
+        <button class="signup-Btn">Sign Up</button>
+        <button class="login-Btn">Log In</button>
+    </div>
+</div>
+<!-- End Responsive Side Bar -->
 
 
 
@@ -100,10 +97,10 @@
             <div class="blog-container">
                 <div class="left-side">
                     <img src="Assets/Bolg/Tooltip.png" alt="">
-                    <h4 class="mainCard-Title">Reach your users with new tools. <span class="just-on-mobile-tablet">Reach your
+                    <h4 class="mainCard-Title">Reach your users with new tools. <span class="just-on-desktob-tablet">Reach your
                         users with new tools. Reach
-                        your users with new</span>
-                    tools.</h4>
+                        your users with new tools.</span>
+                    </h4>
                     <p class="mainCard-Desc">Efficiently unleash cross-media information without cross-media value.
                         Quickly
                         maximize.Efficiently unleash cross-media information without cross-media value. Quickly

@@ -90,7 +90,9 @@ body {
 .just-on-desktob {
     visibility: visible;
 }
-
+.just-on-desktob-tablet{
+    visibility: visible;
+}
 .just-on-mobile-tablet {
     display: none;
 }
@@ -183,9 +185,6 @@ color: #B1CCFB;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, transform 0.3s ease-out;
-    transform: translateY(-10px);
-    z-index: 1; /* تأكد من وجود هذا الخاصية */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -193,7 +192,7 @@ color: #B1CCFB;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    transition-delay: 0.1s; /* أضف هذا السطر لتأخير التأثير قليلاً */
+    transition: ease-in-out 2s;
 }
 
 .dropdown-menu li {
@@ -1401,11 +1400,42 @@ color: #B1CCFB;
 
     .sideNav {
         display: block !important;
+        max-width: 65% !important;
     }
 
+.dropdown-menu{
+    display: none;
+}
+.dropdown-menu .open{
+    width: 100px;
+    display: inline-block;
+   
+}
 
 
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: white;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
+  }
+  .dropdown-container a{
+    margin: 7px;
+    color: black;
+    
+  }
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
 
+   
+    
     /* General settings */
 
     .just-on-mobile {
@@ -1428,6 +1458,9 @@ color: #B1CCFB;
         display: none;
     }
 
+    .just-on-desktob-tablet{
+        display: none;
+    }
     /* End */
 
 
@@ -1463,6 +1496,22 @@ color: #B1CCFB;
     .icon {
         display: block;
     }
+
+    .sideNav .closBtn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 20px;
+        margin-left: 50px;
+        padding: 5px;
+        color: black !important;
+        background-color: white !important;
+        border-radius: 50%;
+    
+    }
+    
+
+
 
     .hero-Section .hero-content h1 {
         width: 343px;
