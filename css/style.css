@@ -246,18 +246,27 @@ body {
     margin: var(--container);
     height: 400px;
     margin-top: 64px;
+    /* flex-wrap: wrap; */
 }
 
 .blog-container {
     display: grid;
     grid-template-columns: auto auto;
     gap: 40px;
+    
 
 
 }
 
 .left-side {
     grid-row: 1/3;
+    width: 100%;
+    
+
+
+}
+.left-side img {
+    max-height: 250px;
     width: 100%;
 
 
